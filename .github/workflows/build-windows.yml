@@ -23,7 +23,7 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --onefile --windowed --name Othello --add-data ".":"." main.py
+          pyinstaller --onefile --windowed --name Othello main.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
